@@ -2,8 +2,6 @@
 
 Projeto acadêmico desenvolvido para a disciplina de **Modelagem de Banco de Dados**, com modelagem conceitual, lógica e física de um sistema de reservas hoteleiras. A implementação do banco de dados será realizada em **PostgreSQL**, utilizando a plataforma **Supabase**.
 
-> **Status do projeto:** em desenvolvimento. Os arquivos e as evidências das etapas seguintes serão adicionados conforme a implementação.
-
 ## 1. Cenário
 
 ### 1.1. Descrição do estabelecimento
@@ -93,7 +91,7 @@ O modelo lógico transforma as entidades e os relacionamentos em tabelas relacio
 
 ## 4. Modelagem Física
 
-A implementação será realizada em PostgreSQL, no Supabase, com os comandos de criação das tabelas, definição de tipos de dados, chaves, relacionamentos e restrições de integridade referencial.
+A implementação foi realizada em PostgreSQL, no Supabase, com os comandos de criação das tabelas, definição de tipos de dados, chaves, relacionamentos e restrições de integridade referencial.
 
 **Arquivos desta etapa:**
 
@@ -102,11 +100,46 @@ A implementação será realizada em PostgreSQL, no Supabase, com os comandos de
 
 ## 5. Dados
 
-**Arquivos desta etapa:**
+Nesta etapa, foram inseridos **5.400 registros fictícios**, distribuídos entre as 10 tabelas do banco de dados do Hotel Alola, respeitando os relacionamentos e as chaves estrangeiras.
 
-- [`05-dados/01-insercao-dados.sql`](05-dados/01-insercao-dados.sql) — script para popular as tabelas.
-- [`05-dados/02-verificacao-registros.sql`](05-dados/02-verificacao-registros.sql) — consultas de contagem de registros por tabela.
-- `05-dados/Prints/` — capturas que demonstram os dados inseridos.
+Para facilitar a organização e a manutenção, os comandos de inserção foram separados em arquivos SQL individuais, um para cada tabela.
+
+### Arquivos desta etapa
+
+**Scripts de inserção:**
+
+- [01.1 — Clientes](05-dados/01.1-insercao-cliente.sql)
+- [01.2 — Funcionários](05-dados/01.2-insercao-funcionarios.sql)
+- [01.3 — Pagamentos](05-dados/01.3-insercao-pagamento.sql)
+- [01.4 — Inventário](05-dados/01.4-insercao-inventario.sql)
+- [01.5 — E-mails](05-dados/01.5-insercao-email.sql)
+- [01.6 — Telefones](05-dados/01.6-insercao-telefone.sql)
+- [01.7 — Quartos](05-dados/01.7-insercao-quartos.sql)
+- [01.8 — Reservas](05-dados/01.8-insercao-reservas.sql)
+- [01.9 — Reserva_Quartos](05-dados/01.9-insercao-reserva_quartos.sql)
+- [01.10 — Reserva_Funcionarios](05-dados/01.10-insercao-reserva_funcionarios.sql)
+
+**Verificação dos registros:**
+
+- [02 — Verificação dos registros](05-dados/02-verificacao-registros.sql) — consultas SQL para conferir a quantidade de registros inseridos em cada tabela.
+
+### Evidências no Supabase
+
+A pasta [`05-dados/Prints/`](05-dados/Prints/) contém as capturas de tela das tabelas preenchidas e dos resultados da execução.
+
+- [01 — Clientes](05-dados/Prints/01-clientes.png)
+- [02 — Funcionários](05-dados/Prints/02-funcionarios.png)
+- [03 — Pagamentos](05-dados/Prints/03-pagamentos.png)
+- [04 — Inventários](05-dados/Prints/04-inventarios.png)
+- [05 — E-mails](05-dados/Prints/05-E-mails.png)
+- [06 — Telefones](05-dados/Prints/06-telefones.png)
+- [07 — Quartos](05-dados/Prints/07-quartos.png)
+- [08 — Reservas](05-dados/Prints/08-reservas.png)
+- [09 — Reserva_Quartos](05-dados/Prints/09-reserva-quartos.png)
+- [10 — Reserva_Funcionarios](05-dados/Prints/10-reserva-funcionarios.png)
+- [11 — Contagem de registros](05-dados/Prints/11-contagem-registros.png)
+
+Também foi adicionada uma captura da execução dos scripts de inserção no Supabase.
 
 ## 6. CRUD
 
