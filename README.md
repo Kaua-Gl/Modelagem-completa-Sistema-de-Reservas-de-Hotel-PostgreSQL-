@@ -108,7 +108,7 @@ Para facilitar a organização e a manutenção, os comandos de inserção foram
 
 **Scripts de inserção:**
 
-- [01.1 — Clientes](05-dados/01.1-insercao-cliente.sql)
+- [01.1 — Clientes](05-dados/01-insercao-cliente.sql)
 - [01.2 — Funcionários](05-dados/01.2-insercao-funcionarios.sql)
 - [01.3 — Pagamentos](05-dados/01.3-insercao-pagamento.sql)
 - [01.4 — Inventário](05-dados/01.4-insercao-inventario.sql)
