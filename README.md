@@ -100,11 +100,7 @@ A implementação será realizada em PostgreSQL, no Supabase, com os comandos de
 - [`04-modelagem-fisica/01-criacao-tabelas.sql`](04-modelagem-fisica/01-criacao-tabelas.sql) — script de criação do banco.
 - `04-modelagem-fisica/Prints/` — capturas da estrutura das tabelas e relacionamentos no Supabase.
 
-**Status:** implementação e evidências pendentes.
-
 ## 5. Dados
-
-Cada tabela física deverá conter **no mínimo 500 registros**, utilizando dados fictícios consistentes com o cenário e com as regras de integridade do banco.
 
 **Arquivos desta etapa:**
 
@@ -112,11 +108,7 @@ Cada tabela física deverá conter **no mínimo 500 registros**, utilizando dado
 - [`05-dados/02-verificacao-registros.sql`](05-dados/02-verificacao-registros.sql) — consultas de contagem de registros por tabela.
 - `05-dados/Prints/` — capturas que demonstram os dados inseridos.
 
-**Status:** inserção e verificação pendentes.
-
 ## 6. CRUD
-
-Demonstração das quatro operações fundamentais no Supabase:
 
 | Operação | Comando SQL | Finalidade |
 |---|---|---|
@@ -130,18 +122,12 @@ Demonstração das quatro operações fundamentais no Supabase:
 - [`06-CRUD/crud.sql`](06-CRUD/crud.sql) — comandos utilizados na demonstração.
 - `06-CRUD/Prints/` — capturas de tela com os resultados de cada operação.
 
-**Status:** comandos e evidências pendentes.
-
 ## 7. Relatórios
-
-Serão desenvolvidas **10 consultas SQL** para responder a questões relevantes do Hotel Alola, utilizando `SELECT`, `WHERE`, `ORDER BY` e `JOIN`, com exploração dos relacionamentos entre as tabelas.
 
 **Arquivos desta etapa:**
 
 - [`07-relatorios/relatorios.sql`](07-relatorios/relatorios.sql) — as 10 consultas comentadas e organizadas.
 - `07-relatorios/Prints/` — capturas dos resultados, como evidências complementares.
-
-**Status:** consultas e resultados pendentes.
 
 ---
 
