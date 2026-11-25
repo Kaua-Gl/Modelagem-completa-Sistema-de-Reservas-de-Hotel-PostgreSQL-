@@ -79,17 +79,17 @@ Desenvolver um banco de dados relacional para o Hotel Alola, capaz de armazenar 
 
 O Diagrama Entidade-Relacionamento (DER) apresenta as entidades, os atributos e os relacionamentos do cenário, incluindo exemplos de atributos simples, compostos, multivalorados, derivados e identificadores, bem como cardinalidades 1:1, 1:N e N:N.
 
-**Arquivo:** [`02-Modelagem-conceitual/Modelo_Conceitual.png`](02-Modelagem-conceitual/Modelagem_conceitual_sistema_reserva_hotel.svg)
+**Arquivo:** [`02-Modelagem-conceitual/Modelo_Conceitual.png`](02-Modelagem-conceitual/Modelagem_conceitual_sistema_reserva_hotel.png)
 
-![Modelo conceitual do Hotel Alola](02-Modelagem-conceitual/Modelagem_conceitual_sistema_reserva_hotel.png)
+![Modelo conceitual do Hotel Alola](02-Modelagem-conceitual/Modelagem_conceitual_sistema_reserva_hotel.svg)
 
 ## 3. Modelagem Lógica
 
 O modelo lógico transforma as entidades e os relacionamentos em tabelas relacionais, identificando **chaves primárias (PK)**, **chaves estrangeiras (FK)** e os tipos de dados previstos. As tabelas associativas representam os relacionamentos N:N.
 
-**Arquivo:** [`03-modelagem-logica/Modelo_Logico.png`](03-modelagem-logica/Modelagem_logica_sistema_reserva_hotel.drawio.svg)
+**Arquivo:** [`03-modelagem-logica/Modelo_Logico.png`](03-modelagem-logica/Modelagem_logica_sistema_reserva_hotel.drawio.png)
 
-![Modelo lógico do Hotel Alola](03-modelagem-logica/Modelagem_logica_sistema_reserva_hotel.drawio.png)
+![Modelo lógico do Hotel Alola](03-modelagem-logica/Modelagem_logica_sistema_reserva_hotel.drawio.svg)
 
 ## 4. Modelagem Física
 
