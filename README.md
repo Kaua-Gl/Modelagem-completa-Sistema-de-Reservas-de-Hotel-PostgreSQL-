@@ -104,7 +104,7 @@ A implementação foi realizada em PostgreSQL, no Supabase, com os comandos de c
 **Arquivos desta etapa:**
 
 - [`04-modelagem-fisica/01-criacao-tabelas.sql`](04-modelagem-fisica/01-criacao-tabelas.sql) — script de criação do banco.
-- `04-modelagem-fisica/Prints/` — capturas da estrutura das tabelas e relacionamentos no Supabase.
+- [`04-modelagem-fisica/Prints/`](04-modelagem-fisica/Prints/) — capturas da estrutura das tabelas e relacionamentos no Supabase.
 
 ## 5. Dados
 
