@@ -191,23 +191,58 @@ Todas as evidências estão organizadas na pasta [`06-CRUD/Prints/`](06-CRUD/Pri
 ```text
 Modelagem-Banco-de-Dados-Hotel-Alola/
 ├── README.md
-├── 01-Cenario-descricao/
-│   └── .gitkeep                      
+│
 ├── 02-Modelagem-conceitual/
-│   └── Modelo_Conceitual.png         # adicionar imagem
+│   ├── Modelagem_conceitual_sistema_reserva_hotel.png
+│   └── Modelagem_conceitual_sistema_reserva_hotel.svg
+│
 ├── 03-modelagem-logica/
-│   └── Modelo_Logico.png             # adicionar imagem
+│   ├── Modelagem_logica_sistema_reserva_hotel.drawio.png
+│   └── Modelagem_logica_sistema_reserva_hotel.drawio.svg
+│
 ├── 04-modelagem-fisica/
-│   ├── 01-criacao-tabelas.sql        # adicionar script
-│   └── Prints/                      # adicionar capturas
+│   ├── 01-criacao-tabelas.sql
+│   └── Prints/
+│       ├── 01-execucao-sql.png
+│       ├── 02-tabelas-criadas.png
+│       ├── 03-estrutura-tabelas.png
+│       └── 04-relacionamentos.png
+│
 ├── 05-dados/
-│   ├── 01-insercao-dados.sql         # adicionar script
-│   ├── 02-verificacao-registros.sql  # adicionar script
-│   └── Prints/                      # adicionar capturas
-├── 06-CRUD/
-│   ├── crud.sql                     # adicionar script
-│   └── Prints/                      # adicionar capturas
-└── 07-relatorios/
-    ├── relatorios.sql               # adicionar script
-    └── Prints/                      # adicionar capturas
+│   ├── 01-insercao-cliente.sql
+│   ├── 01.2-insercao-funcionarios.sql
+│   ├── 01.3-insercao-pagamento.sql
+│   ├── 01.4-insercao-inventario.sql
+│   ├── 01.5-insercao-email.sql
+│   ├── 01.6-insercao-telefone.sql
+│   ├── 01.7-insercao-quartos.sql
+│   ├── 01.8-insercao-reservas.sql
+│   ├── 01.9-insercao-reserva_quartos.sql
+│   ├── 01.10-insercao-reserva_funcionarios.sql
+│   ├── 02-verificacao-registros.sql
+│   └── Prints/
+│       ├── 01-clientes.png
+│       ├── 02-funcionarios.png
+│       ├── 03-pagamentos.png
+│       ├── 04-inventarios.png
+│       ├── 05-E-mails.png
+│       ├── 06-telefones.png
+│       ├── 07-quartos.png
+│       ├── 08-reservas.png
+│       ├── 09-reserva-quartos.png
+│       ├── 10-reserva-funcionarios.png
+│       ├── 11-contagem-registros.png
+│       └── 12-Execução-dos-dados-supabase.png
+│
+└── 06-CRUD/
+    ├── 01-Insert.sql
+    ├── 02-select.sql
+    ├── 03-Update.sql
+    ├── 04-Delete.sql
+    └── Prints/
+        ├── 01-Insert (Create).png
+        ├── 02-Select (Read).png
+        ├── 03-Update (Update).png
+        ├── 04- Delete (Delete).png
+        └── 05- Verificar Delete (delete).png
 ```
