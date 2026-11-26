@@ -143,17 +143,39 @@ Também foi adicionada uma captura da execução dos scripts de inserção no Su
 
 ## 6. CRUD
 
-| Operação | Comando SQL | Finalidade |
+Nesta etapa, foram implementadas e executadas as quatro operações fundamentais de manipulação de dados em um banco de dados relacional: **Create, Read, Update e Delete (CRUD)**.
+
+As operações foram desenvolvidas utilizando comandos SQL no PostgreSQL, por meio do SQL Editor do Supabase, com foco na tabela `Cliente` do Hotel Alola.
+
+| Operação | Comando SQL | Implementação |
 |---|---|---|
-| Create | `INSERT` | Inserir registros |
-| Read | `SELECT` | Consultar registros |
-| Update | `UPDATE` | Atualizar registros |
-| Delete | `DELETE` | Excluir registros |
+| Create | `INSERT` | Cadastro de novos clientes |
+| Read | `SELECT` | Consulta de clientes por CPF e nome |
+| Update | `UPDATE` | Atualização das informações de endereço de um cliente |
+| Delete | `DELETE` | Exclusão de um cliente e verificação posterior |
 
-**Arquivos desta etapa:**
+### 6.1. Scripts SQL
 
-- [`06-CRUD/crud.sql`](06-CRUD/crud.sql) — comandos utilizados na demonstração.
-- `06-CRUD/Prints/` — capturas de tela com os resultados de cada operação.
+Para facilitar a organização, cada operação foi armazenada em um arquivo SQL independente numerado em ordem de execução.
+
+- [01 — INSERT (Create)](06-CRUD/01-Insert.sql) — inserção de três clientes fictícios no banco de dados.
+- [02 — SELECT (Read)](06-CRUD/02-select.sql) — consultas utilizando CPF e nome dos clientes.
+- [03 — UPDATE (Update)](06-CRUD/03-Update.sql) — atualização dos dados de endereço de um cliente específico.
+- [04 — DELETE (Delete)](06-CRUD/04-Delete.sql) — exclusão de um cliente e consulta para verificar a remoção do registro.
+
+Os comandos utilizam cláusulas como `WHERE` para selecionar registros específicos e `RETURNING *` para exibir os registros inseridos, alterados ou excluídos.
+
+### 6.2. Evidências de execução
+
+As operações foram demonstradas no Supabase, com capturas de tela dos comandos e seus resultados.
+
+- [01 — Execução do INSERT](06-CRUD/Prints/01-Insert%20%28Create%29.png)
+- [02 — Execução do SELECT](06-CRUD/Prints/02-Select%20%28Read%29.png)
+- [03 — Execução do UPDATE](06-CRUD/Prints/03-Update%20%28Update%29.png)
+- [04 — Execução do DELETE](06-CRUD/Prints/04-%20Delete%20%28Delete%29.png)
+- [05 — Verificação do DELETE](06-CRUD/Prints/05-%20Verificar%20Delete%20%28delete%29.png)
+
+Todas as evidências estão organizadas na pasta [`06-CRUD/Prints/`](06-CRUD/Prints/).
 
 ## 7. Relatórios
 
