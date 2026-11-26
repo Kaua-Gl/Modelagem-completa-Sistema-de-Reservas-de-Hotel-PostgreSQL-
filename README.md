@@ -250,6 +250,10 @@ Essas consultas podem auxiliar o Hotel Alola no acompanhamento das reservas, pag
 Modelagem-Banco-de-Dados-Hotel-Alola/
 ├── README.md
 │
+├── 01-Cenario-descricao/
+│   └── cenario-hotel-alola.md
+│
+├── 02-Modelagem-conceitual/
 ├── 02-Modelagem-conceitual/
 │   ├── Modelagem_conceitual_sistema_reserva_hotel.png
 │   └── Modelagem_conceitual_sistema_reserva_hotel.svg
