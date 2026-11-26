@@ -179,12 +179,62 @@ Todas as evidências estão organizadas na pasta [`06-CRUD/Prints/`](06-CRUD/Pri
 
 ## 7. Relatórios
 
-**Arquivos desta etapa:**
+Nesta etapa, foram desenvolvidas **10 consultas SQL** com o objetivo de extrair e analisar informações relevantes para o gerenciamento do Hotel Alola.
 
-- [`07-relatorios/relatorios.sql`](07-relatorios/relatorios.sql) — as 10 consultas comentadas e organizadas.
-- `07-relatorios/Prints/` — capturas dos resultados, como evidências complementares.
+Os relatórios foram implementados em PostgreSQL, utilizando o SQL Editor do Supabase, e exploram os relacionamentos existentes entre clientes, funcionários, reservas, quartos, inventários e pagamentos.
 
----
+As consultas utilizam comandos e cláusulas como `SELECT`, `WHERE`, `ORDER BY` e `JOIN`, além de funções de agregação como `COUNT()`, `SUM()` e `AVG()`, e agrupamento com `GROUP BY`.
+
+### 7.1. Relatórios desenvolvidos
+
+| Nº | Relatório | Finalidade |
+|---|---|---|
+| 01 | Clientes e suas reservas | Consultar os clientes responsáveis pelas reservas, com datas, valores e situação |
+| 02 | Reservas de maior valor | Identificar as reservas mais caras registradas no hotel |
+| 03 | Pagamentos confirmados | Relacionar pagamentos realizados, reservas e respectivos clientes |
+| 04 | Quartos por capacidade | Consultar os quartos que comportam três ou mais hóspedes |
+| 05 | Funcionários por reserva | Identificar os funcionários vinculados ao registro das reservas |
+| 06 | Quartos utilizados nas reservas | Consultar os quartos associados às reservas e seus períodos |
+| 07 | Clientes com mais reservas | Contabilizar reservas realizadas e valores acumulados por cliente |
+| 08 | Total pago por forma de pagamento | Analisar a quantidade e o valor dos pagamentos por modalidade |
+| 09 | Inventários dos quartos | Consultar as condições gerais e datas de verificação dos quartos |
+| 10 | Reservas por mês | Analisar a quantidade de reservas e os valores por período mensal |
+
+### 7.2. Scripts SQL
+
+Cada relatório foi organizado em um arquivo SQL independente, facilitando sua execução, manutenção e consulta.
+
+- [01 — Clientes e reservas](07-relatorios/01-clientes-e-reservas.sql)
+- [02 — Reservas de maior valor](07-relatorios/02-reservas-de-maior-valor.sql)
+- [03 — Pagamentos confirmados](07-relatorios/03-pagamentos-confirmados.sql)
+- [04 — Quartos por capacidade](07-relatorios/04-quartos-por-capacidade.sql)
+- [05 — Funcionários por reserva](07-relatorios/05-funcionarios-por-reserva.sql)
+- [06 — Quartos utilizados nas reservas](07-relatorios/06-quartos-utilizados-nas-reservas.sql)
+- [07 — Clientes com mais reservas](07-relatorios/07-clientes-com-mais-reservas.sql)
+- [08 — Total pago por forma de pagamento](07-relatorios/08-total-pago-por-forma-de-pagamento.sql)
+- [09 — Inventários dos quartos](07-relatorios/09-inventarios-dos-quartos.sql)
+- [10 — Reservas por mês](07-relatorios/10-reservas-por-mes.sql)
+
+### 7.3. Evidências no Supabase
+
+Foram adicionadas capturas de tela dos dez relatórios na pasta [`07-relatorios/Prints/`](07-relatorios/Prints/), documentando os resultados das consultas.
+
+- [01 — Clientes e reservas](07-relatorios/Prints/01-clientes-e-reservas.png)
+- [02 — Reservas de maior valor](07-relatorios/Prints/02-reservas-de-maior-valor.png)
+- [03 — Pagamentos confirmados](07-relatorios/Prints/03-pagamentos-confirmados.png)
+- [04 — Quartos por capacidade](07-relatorios/Prints/04-quartos-por-capacidade.png)
+- [05 — Funcionários por reserva](07-relatorios/Prints/05-funcionarios-por-reserva.png)
+- [06 — Quartos utilizados nas reservas](07-relatorios/Prints/06-quartos-utilizados-nas-reservas.png)
+- [07 — Clientes com mais reservas](07-relatorios/Prints/07-clientes-com-mais-reservas.png)
+- [08 — Total pago por forma de pagamento](07-relatorios/Prints/08-total-pago-por-forma-de-pagamento.png)
+- [09 — Inventários dos quartos](07-relatorios/Prints/09-inventarios-dos-quartos.png)
+- [10 — Reservas por mês](07-relatorios/Prints/10-reservas-por-mes.sql.png)
+
+### 7.4. Objetivo dos relatórios
+
+A elaboração dos relatórios demonstra a aplicação prática de consultas SQL em um banco de dados relacional, permitindo combinar informações de diferentes tabelas, filtrar registros, ordenar resultados e realizar análises quantitativas.
+
+Essas consultas podem auxiliar o Hotel Alola no acompanhamento das reservas, pagamentos, condições dos quartos e atividades administrativas.
 
 ## Organização dos arquivos
 
@@ -234,15 +284,39 @@ Modelagem-Banco-de-Dados-Hotel-Alola/
 │       ├── 11-contagem-registros.png
 │       └── 12-Execução-dos-dados-supabase.png
 │
-└── 06-CRUD/
-    ├── 01-Insert.sql
-    ├── 02-select.sql
-    ├── 03-Update.sql
-    ├── 04-Delete.sql
+├── 06-CRUD/
+│   ├── 01-Insert.sql
+│   ├── 02-select.sql
+│   ├── 03-Update.sql
+│   ├── 04-Delete.sql
+│   └── Prints/
+│       ├── 01-Insert (Create).png
+│       ├── 02-Select (Read).png
+│       ├── 03-Update (Update).png
+│       ├── 04- Delete (Delete).png
+│       └── 05- Verificar Delete (delete).png
+│
+└── 07-relatorios/
+    ├── 01-clientes-e-reservas.sql
+    ├── 02-reservas-de-maior-valor.sql
+    ├── 03-pagamentos-confirmados.sql
+    ├── 04-quartos-por-capacidade.sql
+    ├── 05-funcionarios-por-reserva.sql
+    ├── 06-quartos-utilizados-nas-reservas.sql
+    ├── 07-clientes-com-mais-reservas.sql
+    ├── 08-total-pago-por-forma-de-pagamento.sql
+    ├── 09-inventarios-dos-quartos.sql
+    ├── 10-reservas-por-mes.sql
     └── Prints/
-        ├── 01-Insert (Create).png
-        ├── 02-Select (Read).png
-        ├── 03-Update (Update).png
-        ├── 04- Delete (Delete).png
-        └── 05- Verificar Delete (delete).png
+        ├── 01-clientes-e-reservas.png
+        ├── 02-reservas-de-maior-valor.png
+        ├── 03-pagamentos-confirmados.png
+        ├── 04-quartos-por-capacidade.png
+        ├── 05-funcionarios-por-reserva.png
+        ├── 06-quartos-utilizados-nas-reservas.png
+        ├── 07-clientes-com-mais-reservas.png
+        ├── 08-total-pago-por-forma-de-pagamento.png
+        ├── 09-inventarios-dos-quartos.png
+        └── 10-reservas-por-mes.sql.png
+
 ```
