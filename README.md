@@ -2,6 +2,10 @@
 
 Projeto acadêmico desenvolvido para a disciplina de **Modelagem de Banco de Dados**, com modelagem conceitual, lógica e física de um sistema de reservas hoteleiras. A implementação do banco de dados será realizada em **PostgreSQL**, utilizando a plataforma **Supabase**.
 
+
+## Uso de Inteligência Artificial
+A Inteligência Artificial foi utilizada como ferramenta de apoio na geração de dados fictícios, organização da documentação e revisão do código.
+
 ## 1. Cenário
 
 ### 1.1. Descrição do estabelecimento
@@ -118,7 +122,7 @@ As capturas de tela demonstram a execução dos scripts, a criação das tabelas
 
 ## 5. Dados
 
-Nesta etapa, foram inseridos **5.400 registros fictícios**, distribuídos entre as 10 tabelas do banco de dados do Hotel Alola, respeitando os relacionamentos e as chaves estrangeiras.
+Nesta etapa, foram inseridos **5.400 registros fictícios**, distribuídos entre as 10 tabelas do banco de dados do Hotel Alola, respeitando os relacionamentos e as chaves estrangeiras. (A Inteligência Artificial foi utilizada geração de dados fictícios)
 
 Para facilitar a organização e a manutenção, os comandos de inserção foram separados em arquivos SQL individuais, um para cada tabela.
 
