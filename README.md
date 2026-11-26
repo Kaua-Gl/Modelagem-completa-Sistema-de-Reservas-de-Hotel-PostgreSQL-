@@ -73,6 +73,14 @@ Na modelagem lógica, os relacionamentos N:N são representados por `Reservas_Qu
 
 Desenvolver um banco de dados relacional para o Hotel Alola, capaz de armazenar e relacionar informações necessárias ao gerenciamento de reservas e atividades administrativas. O projeto aplica identificação de entidades, atributos, chaves e relacionamentos, transformação dos modelos conceitual e lógico em uma estrutura física PostgreSQL, operações CRUD e consultas SQL.
 
+### 1.7. Documentação do cenário
+
+A descrição completa do cenário do Hotel Alola também está disponível em um documento Markdown independente, organizado na primeira pasta do repositório.
+
+**Documento:** [Cenário e descrição do Hotel Alola](01-Cenario-descricao/cenario-hotel-alola.md).
+
+O arquivo reúne a contextualização do estabelecimento fictício, o problema identificado, a solução proposta, as entidades e seus atributos, os relacionamentos e as regras de negócio utilizadas como base para a modelagem do banco de dados.
+
 ## 2. Modelagem Conceitual
 
 O Diagrama Entidade-Relacionamento (DER) apresenta as entidades, os atributos e os relacionamentos do cenário, incluindo exemplos de atributos simples, compostos, multivalorados, derivados e identificadores, bem como cardinalidades 1:1, 1:N e N:N.
